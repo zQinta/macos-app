@@ -1,0 +1,36 @@
+name: 🐛 Bug report
+description: Something broken in the zQinta Mac app
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us what you EXPECTED to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a board…
+        2. Click…
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Find it in the app menu → About zQinta
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "e.g. 15.5"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Diagnostics (optional)
+      description: In the app: Help → Diagnostics… — copy any red lines around the failure.
+      render: shell
